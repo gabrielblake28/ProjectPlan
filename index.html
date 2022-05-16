@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="main.js"></script>
+    <title>Fitness Tracker</title>
+
+    <!-- This project will keep track of user input workouts and calculate relevant details based on the type of workout -->
+  </head>
+  <body>
+    <div data-role="page" id="home">
+      <!-- header -->
+      <div data-role="header" data-theme="a">
+        <div data-role="navbar" data-theme="a">
+          <ul>
+            <li><a href="#home">Home Page</a></li>
+            <li><a href="#show">Your Workouts</a></li>
+            <li><a href="#add">Add New Workout</a></li>
+          </ul>
+        </div>
+        <h2 class="header-background-color">Welcome to Fitness Tracker</h2>
+      </div>
+
+      <!-- content -->
+      <h3 data-role="content" data-theme="a">
+        This home page will introduce the project and go over what it is trying
+        to accomplish
+      </h3>
+      <div>
+        The goal of this fitness tracker is calculate calories burned and other relevant details based on
+        the type of workout completed and the duration of the workout. 
+      </div>
+
+      <!-- notes footer -->
+      <div data-role="footer" data-theme="b">
+        <h3>Copyrigtht 2022 by Gabriel Blake</h3>
+      </div>
+    </div>
+    <!-- end of page -------------------------------------------->
+
+    <div data-role="page" id="show">
+      <!-- header -->
+      <div data-role="header" data-theme="a">
+        <!-- /navbar -->
+        <div data-role="navbar" data-theme="a">
+          <ul>
+            <li><a href="#home">Home Page</a></li>
+            <li><a href="#show">Your Workouts</a></li>
+            <li><a href="#add">Add New Workout</a></li>
+          </ul>
+        </div>
+        <h2>Here are Your Workouts</h2>
+      </div>
+
+      <!-- content -->
+      <div data-role="content" data-theme="c">
+        This page will list your completed workouts and will lead to a page that will show the details of the clicked
+        workout
+      </div>
+      <ul>
+        <li><a href="#info">Outdoor Run</a></li>
+        <li><a href="#info">Treadmill</a></li>
+        <li><a href="#info">Elliptical</a></li>
+        <li><a href="#info">Weightlifting</a></li>
+        <li><a href="#info">Sprints</a></li>
+        <li><a href="#info">Biking</a></li>
+        <!-- <li>Treadmill</li>
+        <li>Elliptical</li>
+        <li>Weightlifting</li>
+        <li>Sprints</li>
+        <li>Biking</li> -->
+      </ul>
+
+      <div>workouts</div>
+
+      <!-- notes footer -->
+      <div data-role="footer" data-theme="b">
+        <h3>Copyrigtht 2022 by Gabriel Blake</h3>
+      </div>
+    </div>
+    <!-- end of page ----------------------------------->
+
+    <div data-role="page" id="add">
+      <!-- header -->
+      <div data-role="header" data-theme="a">
+        <aiv data-role="navbar" data-theme="a">
+          <ul>
+            <li><a href="#home">Home Page</a></li>
+            <li><a href="#show">Your Workouts</a></li>
+            <li><a href="#add">Add New Workout</a></li>
+          </ul>
+        </aiv>
+        <h2>Add a New Workout</h2>
+      </div>
+
+      <!-- content -->
+      <div data-role="content" data-theme="d">
+        This will be the page that takes in user information to calculate the
+        information that will be displayed on the workout info page
+        <br />
+
+        <a
+          href="#popupMenu"
+          data-rel="popup"
+          data-transition="slideup"
+          class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-gear ui-btn-icon-left ui-btn-a"
+          >What next?</a
+        >
+        <div data-role="popup" id="popupMenu" data-theme="b">
+          <ul data-role="listview" data-inset="true" style="min-width: 210px">
+            <li data-role="list-divider">Choose an action</li>
+            <li><a href="#home" data-transition="flow">Back to Home</a></li>
+            <li><a href="#show" data-transition="fade">Show Workout</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- notes footer -->
+      <div data-role="footer" data-theme="b">
+        <h3>Copyrigtht 2022 by Gabriel Blake</h3>
+      </div>
+    </div>
+    <!-- end of page --------------------------------------->
+
+    <div data-role="page" id="info">
+      <!-- header -->
+      <div data-role="header" data-theme="a">
+        <aiv data-role="navbar" data-theme="a">
+          <ul>
+            <li><a href="#home">Home Page</a></li>
+            <li><a href="#show">Your Workouts</a></li>
+            <li><a href="#add">Add New Workout</a></li>
+          </ul>
+        </aiv>
+        <h2>Workout Information</h2>
+      </div>
+
+      <!-- content -->
+      <div data-role="content" data-theme="d">
+        This page will display all the details including calories burned of the
+        specific workout
+        <br />
+
+        <a
+          href="#popupMenu"
+          data-rel="popup"
+          data-transition="slideup"
+          class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-gear ui-btn-icon-left ui-btn-a"
+          >What next?</a
+        >
+        <div data-role="popup" id="popupMenu" data-theme="b">
+          <ul data-role="listview" data-inset="true" style="min-width: 210px">
+            <li data-role="list-divider">Choose an action</li>
+            <li><a href="#home" data-transition="flow">Back to Home</a></li>
+            <li><a href="#show" data-transition="fade">Show Workout</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- notes footer -->
+      <div data-role="footer" data-theme="b">
+        <h3>Copyrigtht 2022 by Gabriel Blake</h3>
+      </div>
+    </div>
+  </body>
+</html>
