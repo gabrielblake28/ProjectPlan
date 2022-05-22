@@ -43,7 +43,7 @@
 
       <!-- notes footer -->
       <div data-role="footer" data-theme="b">
-        <h3>Copyrigtht 2022 by Gabriel Blake</h3>
+        <h3>Copyright 2022 by Gabriel Blake</h3>
       </div>
     </div>
     <!-- end of page -------------------------------------------->
@@ -73,7 +73,7 @@
 
       <!-- notes footer -->
       <div data-role="footer" data-theme="b">
-        <h3>Copyrigtht 2022 by Gabriel Blake</h3>
+        <h3>Copyright 2022 by Gabriel Blake</h3>
       </div>
     </div>
     <!-- end of page ----------------------------------->
@@ -103,23 +103,19 @@
         <label for="workout-type">Workout Type</label>
         <select name="workout-type" id="workout-type">
           <option value=""></option>
-          <option value="2">Walking</option>
-          <option value="2">Joggging</option>
-          <option value="1">Sprints</option>
-          <option value="2">Strength Training</option>
-          <option value="1">Yoga</option>
-          <option value="3">Dance</option>
-          <option value="4">Cycling</option>
-          <option value="1">Treadmill</option>
-          <option value="2">Elliptical</option>
-          <option value="5">CrossFit</option>
-          <option value="3">Jump Rope</option>
-          <option value="4">Basketball</option>
-          <option value="5">Soccer</option>
-
-          <option value="3">Dance</option>
-          <option value="4">Cycling</option>
-          <option value="5">CrossFit</option>
+          <option value="Walking">Walking</option>
+          <option value="Joggging">Joggging</option>
+          <option value="Sprints">Sprints</option>
+          <option value="Strength Training">Strength Training</option>
+          <option value="Yoga">Yoga</option>
+          <option value="Dance">Dance</option>
+          <option value="Cycling">Cycling</option>
+          <option value="Treadmill">Treadmill</option>
+          <option value="Elliptical">Elliptical</option>
+          <option value="CrossFit">CrossFit</option>
+          <option value="Jump Rope3">Jump Rope</option>
+          <option value="Basketball">Basketball</option>
+          <option value="Soccer">Soccer</option>
         </select>
         <br />
         <label for="intensity">Intensity</label>
@@ -148,12 +144,12 @@
 
       <!-- notes footer -->
       <div data-role="footer" data-theme="b">
-        <h3>Copyrigtht 2022 by Gabriel Blake</h3>
+        <h3>Copyright 2022 by Gabriel Blake</h3>
       </div>
     </div>
     <!-- end of page --------------------------------------->
 
-    <div data-role="page" id="info">
+    <div data-role="page" id="details">
       <!-- header -->
       <div data-role="header" data-theme="a">
         <aiv data-role="navbar" data-theme="a">
@@ -168,29 +164,24 @@
 
       <!-- content -->
       <div data-role="content" data-theme="d">
-        This page will display all the details including calories burned of the
-        specific workout
+        <h3>Welcome to your workout details page!</h3>
+        <h4>You clicked the workout with an id of</h4>
+        <p id="workout-id"></p>
         <br />
+      </div>
 
-        <a
-          href="#popupMenu"
-          data-rel="popup"
-          data-transition="slideup"
-          class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-gear ui-btn-icon-left ui-btn-a"
-          >What next?</a
-        >
-        <div data-role="popup" id="popupMenu" data-theme="b">
+      <!-- <div data-role="popup" id="popupMenu" data-theme="b">
           <ul data-role="listview" data-inset="true" style="min-width: 210px">
             <li data-role="list-divider">Choose an action</li>
             <li><a href="#home" data-transition="flow">Back to Home</a></li>
             <li><a href="#show" data-transition="fade">Show Workout</a></li>
           </ul>
         </div>
-      </div>
+      </div> -->
 
-      <!-- notes footer -->
+      <!-- footer -->
       <div data-role="footer" data-theme="b">
-        <h3>Copyrigtht 2022 by Gabriel Blake</h3>
+        <h3>Copyright 2022 by Gabriel Blake</h3>
       </div>
     </div>
     <script type="text/javascript" src="index.js"></script>
