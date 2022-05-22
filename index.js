@@ -26,7 +26,8 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("workout-duration").value
       )
     );
-    console.log(workoutArray);
+    (document.getElementById("workout-duration").value = ""),
+      console.log(workoutArray);
   });
   // document.location.href = "index.html#ListAll";
   // also add the URL value

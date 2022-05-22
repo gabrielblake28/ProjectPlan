@@ -95,14 +95,18 @@
       <div data-role="content" data-theme="d">
         <label for="body-type">I am a</label>
         <select name="body-type" id="body-type">
-          <option value=""></option>
-          <option value="1">Man</option>
-          <option value="2">Woman</option>
+          <option value="none" selected disabled hidden>
+            Select an Option
+          </option>
+          <option value="Man">Man</option>
+          <option value="Woman">Woman</option>
         </select>
         <br />
         <label for="workout-type">Workout Type</label>
         <select name="workout-type" id="workout-type">
-          <option value=""></option>
+          <option value="none" selected disabled hidden>
+            Select an Option
+          </option>
           <option value="Walking">Walking</option>
           <option value="Joggging">Joggging</option>
           <option value="Sprints">Sprints</option>
@@ -120,7 +124,9 @@
         <br />
         <label for="intensity">Intensity</label>
         <select name="intensity" id="intensity">
-          <option value=""></option>
+          <option value="none" selected disabled hidden>
+            Select an Option
+          </option>
           <option value="1">Light (Able to hold a conversation)</option>
           <option value="2">Moderate (Body warmth, light sweating)</option>
           <option value="3">
