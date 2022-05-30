@@ -42,7 +42,7 @@
       </div>
 
       <!-- notes footer -->
-      <div data-role="footer" data-theme="b">
+      <div data-role="footer" data-theme="a">
         <h3>Copyright 2022 by Gabriel Blake</h3>
       </div>
     </div>
@@ -63,7 +63,7 @@
       </div>
 
       <!-- content -->
-      <div data-role="content" data-theme="c">
+      <div data-role="content" data-theme="a">
         This page will list your completed workouts and will lead to a page that
         will show the details of the clicked workout
       </div>
@@ -72,7 +72,7 @@
       </div>
 
       <!-- notes footer -->
-      <div data-role="footer" data-theme="b">
+      <div data-role="footer" data-theme="a">
         <h3>Copyright 2022 by Gabriel Blake</h3>
       </div>
     </div>
@@ -92,7 +92,7 @@
       </div>
 
       <!-- content -->
-      <div data-role="content" data-theme="d">
+      <div data-role="content" data-theme="a">
         <label for="body-type">I am a</label>
         <select name="body-type" id="body-type">
           <option value="none" selected disabled hidden>
@@ -136,7 +136,7 @@
         </select>
         <br />
         <label for="workout-duration">Workout Duration (In minutes) :</label>
-        <input name="workout-duration" id="workout-duration" />
+        <input name="workout-duration" id="workout-duration-input" />
 
         <button id="addBtn">Add Workout</button>
         <div data-role="popup" id="popupMenu" data-theme="b">
@@ -149,7 +149,7 @@
       </div>
 
       <!-- notes footer -->
-      <div data-role="footer" data-theme="b">
+      <div data-role="footer" data-theme="a">
         <h3>Copyright 2022 by Gabriel Blake</h3>
       </div>
     </div>
@@ -169,10 +169,13 @@
       </div>
 
       <!-- content -->
-      <div data-role="content" data-theme="d">
-        <h3>Welcome to your workout details page!</h3>
+      <div data-role="content" data-theme="a">
+        <h3>Workout Details</h3>
         <h4>You clicked the workout with an id of</h4>
-        <p id="workout-id"></p>
+        <div id="workout-id"></div>
+        <div id="workout-title"></div>
+        <div id="workout-intensity"></div>
+        <div id="workout-duration"></div>
         <br />
       </div>
 
